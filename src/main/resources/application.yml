@@ -1,0 +1,13 @@
+
+server:
+  port: 9090
+
+# AWS Config details
+aws:
+  region: ap-south-1
+  credentials:
+    accessKey:  
+    secretKey:  
+  s3:
+    bucket: s3awstestbucket1
+    
