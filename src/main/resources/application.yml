@@ -6,8 +6,12 @@ server:
 aws:
   region: ap-south-1
   credentials:
-    accessKey:  
-    secretKey:  
+    accessKey: 
+    secretKey: 
   s3:
     bucket: s3awstestbucket1
-    
+
+logging:
+  level:
+    root: INFO
+    com.example.aws: DEBUG 

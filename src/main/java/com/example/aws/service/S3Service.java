@@ -5,8 +5,6 @@ import java.util.List;
 
 import com.example.aws.dto.FileDetailsDto;
 
-import software.amazon.awssdk.services.s3.model.S3Object;
-
 public interface S3Service {
 	
 	byte[] getFile(String bucketName, String fileName);
