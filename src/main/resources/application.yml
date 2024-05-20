@@ -1,6 +1,6 @@
 
 server:
-  port: 9090
+  port: 9095
 
 # AWS Config details
 aws:
@@ -9,9 +9,17 @@ aws:
     accessKey: 
     secretKey: 
   s3:
-    bucket: s3awstestbucket1
-
-logging:
-  level:
-    root: INFO
-    com.example.aws: DEBUG 
+    bucket: s3awstestbucket1 
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+    health:
+      show-details: always

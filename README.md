@@ -18,7 +18,7 @@ This project implements a Spring Boot application that interacts with Amazon S3 
 
 **Setup:**
 
-1. Configure AWS credentials (accessKey, secretKey) and S3 bucket name in `application.properties`.
+1. Configure AWS credentials (accessKey, secretKey) and S3 bucket name in `application.yml`.
 2. Include necessary libraries (AWS SDK for Java, Spring Boot dependencies) in your pom.xml file.
 
 **Running the application:**

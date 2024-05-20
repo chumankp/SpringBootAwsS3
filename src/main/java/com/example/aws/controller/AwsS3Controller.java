@@ -3,8 +3,8 @@ package com.example.aws.controller;
 import java.io.InputStream;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +26,7 @@ import software.amazon.awssdk.services.s3.model.NoSuchKeyException;
 @RequestMapping("/files")
 public class AwsS3Controller {
 
-	private static final Logger logger = LoggerFactory.getLogger(AwsS3Controller.class);
+	private static final Logger logger = LogManager.getLogger(AwsS3Controller.class);
 
 	@Value("${aws.s3.bucket}")
 	private String bucketName;

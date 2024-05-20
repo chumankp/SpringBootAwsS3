@@ -1,7 +1,7 @@
 package com.example.aws.service.impl;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import com.example.aws.controller.AwsS3Controller;
@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 @Service
 public class S3ServiceImpl implements S3Service {
 
-	private static final Logger logger = LoggerFactory.getLogger(AwsS3Controller.class);
+	private static final Logger logger =  LogManager.getLogger(AwsS3Controller.class);
 
 	private S3Client s3Client;
 
