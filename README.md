@@ -29,4 +29,5 @@ This project implements a Spring Boot application that interacts with Amazon S3 
 **API Endpoints:**
 
 * GET /api/v1/files/{fileName}: Retrieves a file from S3 based on the provided filename.
+* GET /api/v1/files/details: Retrieves all the file details(file name, file size, last modified date) present in provided S3 bucket.
 * POST /api/v1/files: Uploads a file to S3.  The file data should be sent as part of the request body.
