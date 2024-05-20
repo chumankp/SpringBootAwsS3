@@ -7,7 +7,7 @@
         </Console>
         <SplunkHttp
                 name="splunkhttp"
-                url="https://localhost:8088"
+                url="http://localhost:8088"
                 token="8793f7a6-4909-47ac-b4fc-10b0d159908b"
                 host="localhost"
                 index="springboot_aws_s3"
