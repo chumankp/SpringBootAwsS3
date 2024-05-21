@@ -9,7 +9,7 @@ aws:
     accessKey: 
     secretKey: 
   s3:
-    bucket: s3awstestbucket1 
+    bucket: s3awstestbucket1
     
 management:
   endpoints:
